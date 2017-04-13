@@ -54,7 +54,7 @@ services:
   registry:
     image: registry:2
     volumes:
-      - /home/user/config.yml:/etc/docker/registry/config.yml
+      - ./config.yml:/etc/docker/registry/config.yml
     networks:
       - traefik-net
     deploy:
